@@ -17,6 +17,20 @@ class BitCombinations:
         return count
 
     @classmethod
+    def produce_worse_scenario(cls, combos: list) -> list:
+        worse_input_list = []
+        even = []
+        odd = []
+        for i in range(len(combos)):
+            if i % 2 == 1:  # list with even amount of zeroes and ones
+                even.extend(combos[i])
+            else:
+                odd.extend(combos[i])
+        worse_input_list.extend(even)
+        worse_input_list.extend(odd)
+        return worse_input_list
+
+    @classmethod
     def combinations(cls, bits: int) -> list:
         final_layer = []
         for n_bits in range(1, bits):
@@ -56,16 +70,3 @@ class BitCombinations:
         result.extend(all_ones)
         return result
 
-    @classmethod
-    def produce_worse_scenario(cls, combos: list) -> list:
-        worse_input_list = []
-        even = []
-        odd = []
-        for i in range(len(combos)):
-            if i % 2 == 1:  # list with even amount of zeroes and ones
-                even.extend(combos[i])
-            else:
-                odd.extend(combos[i])
-        worse_input_list.extend(even)
-        worse_input_list.extend(odd)
-        return worse_input_list
