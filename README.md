@@ -57,7 +57,7 @@ The idea of QCLG is to allow individuals of different competence levels to exper
 
 ![Alt text](Pictures/qclg.PNG?raw=true "qclg")
 
-###Level 1
+### Level 1
 
 Level 1 is where experimentations concerning the basic concepts of Quantum
 Computing take place. It is the starting place after getting familiarized with the Quantum
@@ -66,7 +66,7 @@ of very basic quantum circuits in order to test their understanding before movin
 the next levels. The currently available experiments in Level 1 are about Superposition,
 Entanglement, and Phase Kickback and we showcase them in more detail in Chapter 5.
 
-###Level 2
+### Level 2
 
 Level 2 is an intermediate layer that aims to motivate the user to learn about
 Quantum Computing through more interactive mediums. Once the user has become more
@@ -74,7 +74,7 @@ proficient with the basic quantum concepts, they can test their knowledge with a
 game for example. The currently available game is “The Exciting Game” which we cover
 extensively in Chapter 6.
 
-###Level 3
+### Level 3
 
 Level 3 has two objectives. The first objective is to implement quantum
 algorithms and the second objective is to implement the classical solution to that
@@ -85,7 +85,7 @@ the results, execute the quantum solution of the problem in the IBM backends or 
 the problem with both approaches and observe the differences. Below we list the three
 directories included in Level 3.
 
-####quantum_algorithms
+#### quantum_algorithms
 
 In this directory, we store the implementations of major quantum Algorithms, as
 well as a controller class that allows individual calling of each of these algorithms. Up to
@@ -94,20 +94,20 @@ offering execution for each algorithm on a simulator, on a real quantum system, 
 local machine, executed classically, on both a real quantum system and the local machine
 for comparison.
 
-####oracles
+#### oracles
 
 In the oracles directory, we store all the oracle functions necessary for
 implementing the quantum algorithms. Currently, there are implementations for one
 possible oracle function of Deutsch-Jozsa which can be found in 7.3.3, and the
 implementation of the oracle function for Bernstein-Vazirani which can be found in 7.6.3.
 
-####classical
+#### classical
 
 The classical directory contains all required classes for implementing the classical
 solutions of the Quantum Algorithms. This includes the logic for the classical algorithms,
 as well as some additional implementations for input generation.
 
-###Level 4
+### Level 4
 
 Once the user feels comfortable with all the previous levels, they can proceed to
 Level 4, which is the automated evaluation of an Algorithm based on its classical and
