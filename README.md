@@ -8,7 +8,7 @@
 * [Useful Resources](#useful-resources)
 
 ## General info
-This project simulates an interactive gameplay of the card game Biriba between a human player and a computer.
+A standalone platform capable of hosting Quantum Computing experiments of different levels using Qiskit resources.
 	
 ## Technologies
 Technologies and Frameworks used for this project:
