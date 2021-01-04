@@ -22,10 +22,10 @@ Technologies and Frameworks used for this project:
 - We demonstrate the procedure of setting up QCLG in a new Windows 10 machine.
 - The instructions are very similar for Ubuntu with slight modifications required for paths.
 - Clone the repository locally by doing the following:
-*1. Launch PyCharm.
-*2. From the “VCS” tab, choose the option “Get from Version Control…”
-*3. From the pop-up window paste the https URL of the dmsl/quantum repository: https://github.com/dmsl/quantum.git
-*4. Press the Clone button and choose to open on a new window.
+* 1. Launch PyCharm.
+* 2. From the “VCS” tab, choose the option “Get from Version Control…”
+* 3. From the pop-up window paste the https URL of the dmsl/quantum repository: https://github.com/dmsl/quantum.git
+* 4. Press the Clone button and choose to open on a new window.
 - The project will not yet work. We need to create and setup the conda environment and setup a Run Configuration in PyCharm.
 - For the conda environment:
 - Install Anaconda.
