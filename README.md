@@ -55,7 +55,7 @@ conda create --name my_env_name -f environment_quantum.yml
 
 The idea of QCLG is to allow individuals of different competence levels to experiment with Quantum Computing. It is also possible to contribute to different levels according to the structure rules. We have implemented four different levels of experimentation, each with a different goal. All levels take advantage of Qiskit resources but to different degrees. 
 
-![Alt text](Pictures/qclg.png?raw=true "qclg")
+![Alt text](Pictures/qclg.PNG?raw=true "qclg")
 
 ###Level 1
 
