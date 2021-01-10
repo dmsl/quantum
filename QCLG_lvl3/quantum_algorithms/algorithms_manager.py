@@ -2,13 +2,13 @@ import constants
 from tools import Tools
 
 
-def print_answers(answer_of_simulation, answer_of_real, least_busy_backend, classical_answer, algorithm):
+def print_answers(answer_of_simulation, answer_of_real, classical_answer, algorithm):
     print("****************** FINAL * RESULTS *******************")
     if answer_of_simulation is not None:
         Tools.print_simul(answer_of_simulation, algorithm)
         print("******************************************************")
     if answer_of_real is not None:
-        Tools.print_real(answer_of_real, least_busy_backend, algorithm)
+        Tools.print_real(answer_of_real, algorithm)
         print("******************************************************")
     if classical_answer is not None:
         Tools.print_classical_answer(classical_answer, algorithm)
@@ -21,7 +21,6 @@ class AlgorithmsManager:
     def showcase(cls):
         answer_of_simulation = None
         answer_of_real = None
-        least_busy_backend = None
         classical_answer = None
 
         algorithm = input(constants.input_message_1)
@@ -43,4 +42,4 @@ class AlgorithmsManager:
             classical_answer = combined[0]
             answer_of_real = combined[1]
 
-        print_answers(answer_of_simulation, answer_of_real, least_busy_backend, classical_answer, algorithm)
+        print_answers(answer_of_simulation, answer_of_real, classical_answer, algorithm)

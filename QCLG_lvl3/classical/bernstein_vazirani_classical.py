@@ -9,4 +9,4 @@ class BersteinVaziraniClassical:
             hit = int(bit) & mask
             guess += str(hit)
             attempts += 1
-        return f"My guess After {attempts} attempts is:\n{guess}."
+        return [attempts, guess]

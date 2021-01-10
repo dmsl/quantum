@@ -86,13 +86,13 @@ class Tools:
         return
 
     @classmethod
-    def print_real(cls, job: BaseJob, least_busy_backend, algorithm: str):
+    def print_real(cls, job: BaseJob, algorithm: str):
         results = job.result()
         answer = results.get_counts()
         print("\nTotal counts are:", answer)
         elapsed = results.time_taken
         print(f"The time it took for the experiment to complete after validation was {elapsed} seconds")
-        plot_histogram(data=answer, title=f"{constants.algorithms[int(algorithm)]} on {least_busy_backend}")
+        plot_histogram(data=answer, title=f"{constants.algorithms[int(algorithm)]}")
         plt.show()
         return
 
@@ -139,7 +139,7 @@ class Tools:
     @classmethod
     def execute_bv_in_real_device(cls, random_binary: str):
         dj_circuit = BernsteinVazirani.bernstein_vazirani(random_binary, eval_mode=False)
-        least_busy_backend = Tools.choose_from_provider(dj_circuit.qubits)
+        least_busy_backend = Tools.choose_from_provider(len(random_binary)+1)
         answer_of_real = Tools.run_on_real_device(dj_circuit, least_busy_backend)
         print(f"least busy is {least_busy_backend}")
         return answer_of_real
@@ -169,15 +169,19 @@ class Tools:
 
     @classmethod
     def print_classical_answer(cls, classical_answer, algorithm):
-        time_to_generate_worst_input = classical_answer[0]
-        execution_time = classical_answer[1]
-        bits = classical_answer[2]
-        function_nature = classical_answer[3]
-        print(f"Results of classical implementation for the {constants.algorithms[int(algorithm)]} Algorithm:")
-        print(f"Function is {function_nature}")
-        print(f"Time to generate worse input for {bits} bits took {time_to_generate_worst_input} seconds.")
-        print(f"Determining if xor is balanced for {bits} bits took {execution_time} seconds.")
-        print(classical_answer)
+        if algorithm == "0":
+            time_to_generate_worst_input = classical_answer[0]
+            execution_time = classical_answer[1]
+            bits = classical_answer[2]
+            function_nature = classical_answer[3]
+            print(f"Results of classical implementation for the {constants.algorithms[int(algorithm)]} Algorithm:")
+            print(f"Function is {function_nature}")
+            print(f"Time to generate worse input for {bits} bits took {time_to_generate_worst_input} seconds.")
+            print(f"Determining if xor is balanced for {bits} bits took {execution_time} seconds.")
+        elif algorithm == "1":
+            attempts = classical_answer[0]
+            number = classical_answer[1]
+            print(f"My guess after {attempts} is: {number}")
 
     @classmethod
     def execute_both(cls, algorithm):
@@ -187,9 +191,9 @@ class Tools:
             real = cls.execute_dj_in_real_device()
             answer.append(classical)
             answer.append(real)
-        elif algorithm == " 1":
+        elif algorithm == "1":
             classical = cls.execute_bernstein_vazirani_classically()
-            real = cls.execute_bv_in_real_device(classical)
+            real = cls.execute_bv_in_real_device(classical[1])
             answer.append(classical)
             answer.append(real)
         return answer
