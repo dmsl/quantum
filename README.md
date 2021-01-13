@@ -31,8 +31,8 @@ Technologies and Frameworks used for this project:
 - Install Anaconda.
 - Open an Anaconda cmd.
 - We will now need to create the environment using these instructions:
-- https://docs.anaconda.com/anacondaorg/user-guide/tasks/work-with-environments/
-We have uploaded our environment into our personal account, (sooodos/quantum) and we can activate it with the following command.
+https://docs.anaconda.com/anacondaorg/user-guide/tasks/work-with-environments/
+- We have uploaded our environment into our personal account, (sooodos/quantum) and we can activate it with the following command.
 
 - Now execute the following command and replace the “my_env_name” with your desired environment name.
 ```
