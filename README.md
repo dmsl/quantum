@@ -30,17 +30,19 @@ Technologies and Frameworks used for this project:
 - For the conda environment:
 - Install Anaconda.
 - Open an Anaconda cmd.
-- Go to the directory of the yml file. If the project was cloned using these instruction the
-- default location is something like C:\Users\NameOfUser\PycharmProjects\quantum.
+- We will now need to create the environment using these instructions:
+- https://docs.anaconda.com/anacondaorg/user-guide/tasks/work-with-environments/
+We have uploaded our environment into our personal account, (sooodos/quantum) and we can activate it with the following command.
+
 - Now execute the following command and replace the “my_env_name” with your desired environment name.
 ```
-conda create --name my_env_name -f environment_quantum.yml
+conda create --name my_env_name sooodos/quantum
 ```
 - After the installation finishes, go back to PyCharm. In the bottom-right corner click on the Project Interpreter box.
 - Choose the “Add Interpreter…” option.
 - From the pop-up window choose “Conda Environment” and then click on the “Existing environment” option.
 - Now you need to search for the python.exe script responsible for the Interpreter.
-- By default, it should be located in C:\Users\NameOfUser\Anaconda3\envs\quantum\python.exe.
+- By default, it should be located in C:\Users\NameOfUser\Anaconda3\envs\my_env_name\python.exe.
 - Save changes.
 - Now we need to add a Run Configuration from PyCharm.
 - Go to the upper-right corner of the window, the Run Configurations box is located to the left of the “run” icon.
