@@ -35,7 +35,7 @@ https://docs.anaconda.com/anacondaorg/user-guide/tasks/work-with-environments/
 - We have uploaded our environment into our personal account, (sooodos/quantum) and we can activate it with the following command and re placing with a desired environment name the "my_env_name" variable.
 
 ```
-conda create --name my_env_name sooodos/quantum
+conda env create --name my_env_name sooodos/quantum
 ```
 - After the installation finishes, go back to PyCharm. In the bottom-right corner click on the Project Interpreter box.
 - Choose the “Add Interpreter…” option.
