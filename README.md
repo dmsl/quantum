@@ -20,8 +20,8 @@ Technologies and Frameworks used for this project:
 	
 ## Setup
 -  DMSL setup tutorial here: https://www.youtube.com/watch?v=kDUyfzYntts&ab_channel=DataManagementSystemsLaboratory
-or follow the guide:
-We demonstrate the procedure of setting up QCLG in a new Windows 10 machine.
+* Or follow the guide:
+* We demonstrate the procedure of setting up QCLG in a new Windows 10 machine.
 - The instructions are very similar for Ubuntu with slight modifications required for paths.
 - Clone the repository locally by doing the following:
 * 1. Launch PyCharm.
