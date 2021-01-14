@@ -119,7 +119,7 @@ concepts, the user must also practice with the Qiskit API in order to extract th
 data to extract useful results.
 
 ## Useful Resources
-* *Qiskit Textbook: https://qiskit.org/textbook/preface.html
-* *IBM Quantum Experience: https://quantum-computing.ibm.com/
-* *Qiskit Content on Youtube: https://www.youtube.com/c/qiskit/playlists
-* *Qiskit Slack Community: https://qiskit.slack.com/
+* Qiskit Textbook: https://qiskit.org/textbook/preface.html
+* IBM Quantum Experience: https://quantum-computing.ibm.com/
+* Qiskit Content on Youtube: https://www.youtube.com/c/qiskit/playlists
+* Qiskit Slack Community: https://qiskit.slack.com/
